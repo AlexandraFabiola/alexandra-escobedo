@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Perfil académico de Alexandra Fabiola Escobedo Teran, estudiante de Administración de Negocios en la Universidad Católica San Pablo (UCSP). Conoce sus cursos, compañeros y contacto.">
+  <title>Alexandra Escobedo | UCSP | Administración de Negocios</title>
+  <style>
+    :root {
+      --primario: #dceefc;
+      --secundario: #406882;
+      --fondo: #f8f9fb;
+      --texto: #333;
+      --borde: #ccddee;
+      --resalte: #91c9f7;
+      --boton-bg: #2a6db3;
+      --boton-color: white;
+      --icono-color: #406882;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--fondo);
+      color: var(--texto);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--primario);
+      padding: 2rem 1rem;
+      text-align: center;
+      border-bottom: 1px solid var(--borde);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.6rem;
+      color: var(--secundario);
+      font-weight: 700;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+
+    nav {
+      background-color: var(--resalte);
+      padding: 0.8rem 1rem;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      margin: 0 1.2rem;
+      text-decoration: none;
+      color: var(--secundario);
+      font-weight: 700;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #194d7a;
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 2rem;
+    }
+
+    section {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+      padding: 2rem 2.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      transition: transform 0.3s ease;
+    }
+
+    section:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 22px rgba(0,0,0,0.15);
+    }
+
+    h2 {
+      border-bottom: 4px solid var(--resalte);
+      padding-bottom: 0.6rem;
+      margin-bottom: 1.5rem;
+      color: var(--secundario);
+      font-size: 1.9rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    li {
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+      line-height: 1.5;
+    }
+
+    .curso {
+      margin-bottom: 1.2rem;
+    }
+
+    .curso-title {
+      font-weight: 700;
+      color: var(--secundario);
+    }
+
+    .profesor {
+      margin-top: 0.2rem;
+      font-weight: 600;
+    }
+
+    .linkedin-link {
+      display: inline-block;
+      margin-top: 0.3rem;
+      color: var(--boton-bg);
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .linkedin-link:hover {
+      text-decoration: underline;
+    }
+
+    .contacto p {
+      margin: 0.6rem 0;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    footer {
+      background-color: var(--primario);
+      text-align: center;
+      padding: 1.3rem 0;
+      margin-top: 3rem;
+      font-size: 1rem;
+      color: var(--secundario);
+      font-weight: 600;
+      user-select: none;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 0.6rem 0;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+
+      main {
+        grid-template-columns: 1fr;
+        gap: 1.8rem;
+      }
+    }
+
+    .destacado {
+      font-weight: bold;
+      color: #1e4e8c;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Alexandra Fabiola Escobedo Teran</h1>
+    <p>Estudiante de Administración de Negocios en la <span class="destacado">Universidad Católica San Pablo (UCSP)</span></p>
+  </header>
+
+  <nav>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#cursos">Cursos</a>
+    <a href="#contacto">Contacto</a>
+    <a href="#companeros">Compañeros</a>
+  </nav>
+
+  <main>
+
+    <section id="sobre-mi" aria-label="Sobre mí">
+      <h2>👩‍🎓 Sobre mí</h2>
+      <p>Soy estudiante del <strong>quinto semestre</strong> de Administración de Negocios en la <span class="destacado">Universidad Católica San Pablo (UCSP)</span>. Me considero responsable, proactiva y con muchas ganas de aprender y desarrollarme profesionalmente.</p>
+      <p>Tengo conocimientos avanzados en los idiomas <strong>inglés</strong> y <strong>portugués</strong>.</p>
+    </section>
+
+    <section id="cursos" aria-label="Cursos actuales">
+      <h2>📚 Cursos Actuales</h2>
+
+      <div class="curso">
+        <p class="curso-title">Fundamentos de Marketing</p>
+        <p class="profesor">Prof. Ana Gómez Burns</p>
+        <a class="linkedin-link" href="https://pe.linkedin.com/in/ana-elizabeth-g%C3%B3mez-burns-4502263b" target="_blank" rel="noopener noreferrer">Ver perfil en LinkedIn</a>
+      </div>
+
+      <div class="curso">
+        <p class="curso-title">Análisis Financiero</p>
+        <p class="profesor">Prof. Lelia Rubina</p>
+        <a class="linkedin-link" href="https://pe.linkedin.com/in/lelia-rubina-27939889" target="_blank" rel="noopener noreferrer">Ver perfil en LinkedIn</a>
+      </div>
+
+      <div class="curso">
+        <p class="curso-title">Matemática Financiera</p>
+        <p class="profesor">Prof. María Belén Boccio</p>
+        <a class="linkedin-link" href="https://pe.linkedin.com/in/mar%C3%ADa-bel%C3%A9n-bocchio-linares-96846035" target="_blank" rel="noopener noreferrer">Ver perfil en LinkedIn</a>
+      </div>
+
+      <div class="curso">
+        <p class="curso-title">Moral</p>
+        <p class="profesor">Prof. Roger Silva</p>
+        <a class="linkedin-link" href="https://www.linkedin.com/in/roger-miller-silva-47374b35/" target="_blank" rel="noopener noreferrer">Ver perfil en LinkedIn</a>
+      </div>
+
+      <div class="curso">
+        <p class="curso-title">Desarrollo de Habilidades de Negociación</p>
+        <p class="profesor">Prof. Renzo Menchola</p>
+        <a class="linkedin-link" href="https://www.linkedin.com/in/rmenchola/" target="_blank" rel="noopener noreferrer">Ver perfil en LinkedIn</a>
+      </div>
+
+      <div class="curso">
+        <p class="curso-title">Inglés Avanzado</p>
+      </div>
+
+      <div class="curso">
+        <p class="curso-title">Portugués Avanzado</p>
+      </div>
+    </section>
+
+    <section id="contacto" class="contacto" aria-label="Información de contacto">
+      <h2>✉️ Contacto</h2>
+      <p><strong>LinkedIn:</strong> 
+        <a href="https://www.linkedin.com/in/alexandra-fabiola-escobedo-ter%C3%A1n-a8198636a/" target="_blank" rel="noopener noreferrer">
+          linkedin.com/in/alexandra-fabiola-escobedo-terán
+        </a>
+      </p>
+      <p><strong>Email:</strong> <a href="mailto:alexandra.escobedo.teran@ucsp.edu.pe">alexandra.escobedo.teran@ucsp.edu.pe</a></p>
+    </section>
+
+    <section id="companeros" aria-label="Compañeros de estudio">
+      <h2>🤝 Compañeros</h2>
+      <ul>
+        <li>
+          <strong>María Fernanda Apaza Meza</strong><br>
+          <a class="linkedin-link" href="https://pe.linkedin.com/in/mar%C3%ADa-fernanda-apaza-meza-3926aa29b?trk=people-guest_people_search-card" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+          <a class="linkedin-link" href="https://mariafernandaapazameza.github.io/Maria-Fernanda-Apaza-Meza/" target="_blank" rel="noopener noreferrer">Sitio web</a>
+        </li>
+        <li><strong>Fiorella Canasa</strong></li>
+        <li>
+          <strong>Krislet Juarez</strong><br>
+          <a class="linkedin-link" href="https://krisletyahairajuarezarce.github.io/Krislet-Yahaira-Juarez-Arce/" target="_blank" rel="noopener noreferrer">Sitio web</a>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Alexandra Escobedo – Estudiante UCSP. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
